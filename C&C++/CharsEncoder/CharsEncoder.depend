@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1606255683 source:c:\users\collins\documents\codeblocks\projects\charsencoder\main.cpp
+	<iostream>
+	<fstream>
+	<ctype.h>
+	<string>
+	<sstream>
+	<algorithm>
+	<iterator>
+	<chrono>
+	<ctime>
+	<vector>
+	<set>
+	<cstdlib>
+	<windows.h>
+
