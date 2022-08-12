@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head  en="en">
+
+    <link href="{{ url_for('static', filename='Site.css') }}" rel="stylesheet"  />
+   
+    <title>{% block title %}{% endblock %}</title>
+ 
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,Initial-Scale=1" />
+
+    <meta property="og:type" id="ogtype"  content="website" />
+  
+
+</head>
+<body>
+        <div class="wrap">
+                {% block content %}
+                {% endblock %}
+                <label class="text-center" id="copy">Copyrights &copy; <span id="cpyYr" >2022 Algorithmhunter</span> </label>
+            </div>
+            <script type="text/javascript" src="{{ url_for('static', filename='jquery-1.10.2.js') }}"  ></script>
+            <script type="text/javascript" src="{{ url_for('static', filename='jquery-1.10.2.min.js') }}"  ></script>
+            <script  type="text/javascript" src="{{ url_for('static', filename='Site.js') }}"  ></script>
+          
+</body>
+</html>
