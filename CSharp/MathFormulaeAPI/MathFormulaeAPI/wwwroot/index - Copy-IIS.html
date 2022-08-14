@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulae API</title>
+    <link href="/MathFormulaeAPI/Styles/site.css?v=4" rel="stylesheet" />
+   
+	
+</head>
+<body>
+    <div  class="wrap">
+        <div class="content-holder ">
+
+            <label id="progressnumber"></label>
+            <h1 class="text-center title">Welcome To Math Formulae API</h1>
+            <strong>Public Token</strong>: <span id="token">a73e40db-1b12-4c55-9014-3724900c762f</span>
+            <table class="form-table">
+                <tr>
+                    <td id="postColumn">
+                        <input type="submit" id="post" on value="Post New Formulae" />
+                    </td>
+
+                    <td>
+                        <input type="submit" id="instructions" value="How to use API" />
+                    </td>
+                </tr>
+
+            </table>
+
+
+            <div id="PostMenu">
+                <h3>Post Formulae</h3>
+                <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+                    <table class="form-table">
+                        <tr>
+                            <th>
+                                Formulae Name
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="text" id="add-name" placeholder="formulae name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Formulae Description
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea id="add-description" placeholder="formulae description"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Formulae Author
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="add-author" placeholder="formulae author">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Formulae DatePublished
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="date-table">
+                                    <tr>
+                                        <td>
+                                            <select id="PostDateYear">
+                                                <option disabled>Year</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="PostDateMonth">
+                                                <option disabled>Month</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="PostDateDay">
+                                                <option disabled>Day</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Add">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="closePosting">Close</button>
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+            <div id="EditMenu">
+                <h3>Edit Formulaes</h3>
+                <form class="my-form" id="myform">
+                    <input type="hidden" id="edit-id">
+                    <table class="form-table">
+                        <tr>
+                            <th>
+                                Formulae Name
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="edit-name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Formulae Description
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea id="edit-description"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Formulae Author
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="edit-author">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Formulae DatePublished
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table class="date-table">
+                                    <tr>
+                                        <td>
+                                            <select id="EditDateYear">
+                                                <option disabled>Year</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="EditDateMonth">
+                                                <option disabled>Month</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select id="EditDateDay">
+                                                <option disabled>Day</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Save">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" onclick="closeInput()" value="close">
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </div>
+
+
+
+            <table class="form-table">
+
+                <tbody id="formulaes"></tbody>
+            </table>
+            <p class="Alert text-center" id="Alert"></p>
+            <br />
+            <p class="text-center">Copyrights &copy; 2022 algorithm hunter </p>
+        </div>
+    </div>
+    <script src="/MathFormulaeAPI/Scripts/jquery-3.3.1.min.js"
+          ></script>
+    <script src="/MathFormulaeAPI/Scripts/site.js?v=3"></script>
+</body>
+</html>

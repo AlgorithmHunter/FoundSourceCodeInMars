@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Collins\source\repos\MathFormulaeAPI\MathFormulaeAPI\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2022-08-13T18:05:42.3816272Z;True|2022-05-29T15:35:00.2439944+02:00;True|2022-05-29T13:32:46.6636939+02:00;True|2022-05-28T22:40:18.6219837+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/index.html">
+      <publishTime>08/13/2022 20:02:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
